@@ -13,5 +13,5 @@ How to Use
 
 -Jump towards obstacles and ledges to vault or climb respectively
 
-- Run towards walls diagonally to wallrun
+-Run towards walls diagonally to wallrun
 
