@@ -7,7 +7,7 @@ How to Use
 ------------
 -Download the Project
 
--Open with Unity 2019.2 or above
+-Open with Unity 
 
 -Use WASD to move around, Space key to jump
 
