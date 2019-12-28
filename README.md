@@ -1,7 +1,7 @@
 # Unity-Parkour-Example
 A example FPS with a Parkour mechanics inspired by Mirror's Edge made in Unity written in C#
 
-
+![gif](https://media.giphy.com/media/Ri7d0e0IrLKzGdE4bP/giphy.gif)
 
 How to Use
 ------------
