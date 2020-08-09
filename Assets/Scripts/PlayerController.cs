@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public float WallRunUpForce;
     public float WallRunUpForce_DecreaseRate;
+
     private float upforce;
 
     public float WallJumpUpVelocity;
@@ -131,7 +132,7 @@ public class PlayerController : MonoBehaviour
         {
             WallrunningLeft = true;
             canwallrun = false;
-            upforce = WallRunUpForce;
+            upforce = WallRunUpForce; //refer to line 186
         }
 
         if (DetectWallR.Obstruction && !rbfps.Grounded && !IsParkour && canwallrun) // if detect wall on thr right and is not on the ground
@@ -181,8 +182,9 @@ public class PlayerController : MonoBehaviour
 
         if (WallRunning)
         {
-            rb.AddRelativeForce(0f, upforce, 0f);
-            upforce -= WallRunUpForce_DecreaseRate * Time.deltaTime; //so the player will have a curve like wallrun
+            
+            rb.velocity = new Vector3(rb.velocity.x, upforce ,rb.velocity.z); //set the y velocity while wallrunning
+            upforce -= WallRunUpForce_DecreaseRate * Time.deltaTime; //so the player will have a curve like wallrun, upforce from line 136
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
